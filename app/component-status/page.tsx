@@ -1,3 +1,4 @@
+import React from "react";
 import componentStatusData from "../../data/components";
 
 const ComponentStatusPage = ({
@@ -31,8 +32,8 @@ const ComponentStatusPage = ({
         </li>
       </ul>
 
-      {componentStatusData.slice(1).map((section) => (
-        <>
+      {componentStatusData.map((section) => (
+        <React.Fragment key={section.category}>
           <h2 className="font-bold text-2xl mt-5">{section.category}</h2>
 
           <div className=" overflow-x-auto mt-3">
@@ -63,10 +64,10 @@ const ComponentStatusPage = ({
                 </tr>
               </thead>
               <tbody>
-                {section.components?.map((component, i) => (
+                {section.components?.map((component, idx) => (
                   <tr
-                    key={component.name}
-                    className={`${i % 2 == 0 ? "bg-white" : "bg-slate-100"}`}
+                    key={idx}
+                    className={`${idx % 2 == 0 ? "bg-white" : "bg-slate-100"}`}
                   >
                     <th
                       scope="row"
@@ -74,8 +75,10 @@ const ComponentStatusPage = ({
                     >
                       {component.name}
                     </th>
-                    {component.statuses.map(({ status }) => (
-                      <td className="px-6 py-4">{status}</td>
+                    {component.statuses.map(({ status }, idx) => (
+                      <td key={idx} className="px-6 py-4">
+                        {status}
+                      </td>
                     ))}
                     <td className="px-6 py-4">{component.comment}</td>
                   </tr>
@@ -83,7 +86,7 @@ const ComponentStatusPage = ({
               </tbody>
             </table>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

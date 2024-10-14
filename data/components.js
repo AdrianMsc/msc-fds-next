@@ -1,9 +1,5 @@
 const componentStatusData = [
   {
-    lastUpdate: "05-10-24",
-    componentCount: 30,
-  },
-  {
     category: "Navigation",
     components: [
       {

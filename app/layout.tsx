@@ -17,7 +17,7 @@ export default function RootLayout({
         <header className="bg-white overflow-hidden shadow p-5 flex w-full fixed">
           <MscLogo />
         </header>
-        <main className="pt-20 pb-10 px-5">{children}</main>
+        <main className="pt-20 pb-10 px-10">{children}</main>
       </body>
     </html>
   );
