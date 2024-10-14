@@ -1,12 +1,7 @@
 import React from "react";
 import componentStatusData from "../../data/components";
 
-type ComponentStatusPageProps = {
-  lastUpdate?: string;
-  componentCount?: number;
-};
-
-const ComponentStatusPage: React.FC<ComponentStatusPageProps> = ({
+const ComponentStatusPage = ({
   lastUpdate = "10-05-24",
   componentCount = 30,
 }) => {
@@ -46,7 +41,7 @@ const ComponentStatusPage: React.FC<ComponentStatusPageProps> = ({
               <thead className="text-xs text-gray-700 bg-gray-50">
                 <tr>
                   <th scope="col" className="px-6 py-3 w-[20%]">
-                     
+                    &nbsp;
                   </th>
                   <th scope="col" className="px-6 py-3 w-[15%]">
                     Guidelines
