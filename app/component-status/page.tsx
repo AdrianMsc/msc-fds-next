@@ -1,10 +1,7 @@
 import React from "react";
 import componentStatusData from "../../data/components";
 
-const ComponentStatusPage = ({
-  lastUpdate = "10-05-24",
-  componentCount = 30,
-}) => {
+const ComponentStatusPage = () => {
   return (
     <div>
       <h1 className="font-bold text-3xl">
@@ -14,11 +11,11 @@ const ComponentStatusPage = ({
       </h1>
 
       <small>
-        Last Update:<strong>{lastUpdate}</strong>
+        Last Update:<strong>10-05-24</strong>
       </small>
       <br />
       <small className="text-sm">
-        Components count: <strong>{componentCount}</strong>
+        Components count: <strong>30</strong>
       </small>
 
       <ul className="flex mt-5">
