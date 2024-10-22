@@ -69,7 +69,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <Lottie options={defaultOptions} height={500} width={500} />
+      <Lottie options={defaultOptions} height={600} width={600} />
     </main>
   );
 }

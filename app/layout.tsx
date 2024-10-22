@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import MscLogo from "@/assets/MscLogo";
+import Link from "next/link";
 export const metadata: Metadata = {
   title: "Fuel Design System",
   description: "MSC Design System",
@@ -14,10 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="bg-white overflow-hidden shadow p-5 flex w-full fixed">
-          <MscLogo />
-        </header>
-        <main className="pt-20 pb-10 px-10">{children}</main>
+        <main className="flex">
+          <header className="bg-white overflow-hidden shadow p-5 flex w-screen fixed">
+            <Link href="/">
+              <MscLogo />
+            </Link>
+          </header>
+          {children}
+        </main>
       </body>
     </html>
   );

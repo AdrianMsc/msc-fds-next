@@ -3,7 +3,7 @@ import componentStatusData from "../../data/components";
 
 const ComponentStatusPage = () => {
   return (
-    <div>
+    <div className="p-20">
       <h1 className="font-bold text-3xl">
         <small className="text-sm text-primary-blue">Getting Started</small>
         <br />
