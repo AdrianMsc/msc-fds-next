@@ -1,4 +1,4 @@
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../../components/Sidebar";
 
 export default function DocsLayout({
   children,
@@ -6,9 +6,9 @@ export default function DocsLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex h-screen pt-[64px]">
+    <div className="flex h-screen pt-[64px] w-screen">
       <Sidebar />
-      <div className="overflow-auto">{children}</div>
+      <div className="overflow-auto w-full pr-10 mx-auto">{children}</div>
     </div>
   );
 }

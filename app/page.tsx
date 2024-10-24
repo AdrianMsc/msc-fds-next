@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex justify-center items-center h-screen">
+    <main className="flex justify-center items-center h-screen m-auto">
       <div className="flex flex-col justify-center px-5 lg:w-[45%]">
         <h1 className="font-normal text-[4rem] leading-none">
           Welcome to MSC <br />

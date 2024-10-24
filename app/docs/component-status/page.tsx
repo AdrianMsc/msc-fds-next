@@ -1,9 +1,9 @@
 import React from "react";
-import componentStatusData from "../../data/components";
+import componentStatusData from "../../../data/components";
 
 const ComponentStatusPage = () => {
   return (
-    <div className="p-20">
+    <>
       <h1 className="font-bold text-3xl">
         <small className="text-sm text-primary-blue">Getting Started</small>
         <br />
@@ -85,7 +85,7 @@ const ComponentStatusPage = () => {
           </div>
         </React.Fragment>
       ))}
-    </div>
+    </>
   );
 };
 

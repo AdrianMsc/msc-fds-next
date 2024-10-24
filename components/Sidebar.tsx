@@ -1,12 +1,16 @@
 import componentStatusData from "@/data/components";
 import Link from "next/link";
 import React from "react";
+import formatComponentName from "../utils/formatComponentName";
 
 const Sidebar = () => {
   return (
     <div className="p-5 bg-white sm:max-w-[200px] sm:min-w-[200px] flex flex-col gap-1 mr-10 overflow-auto">
-      <strong>Quick Links</strong>
-      <Link href="/component-status" className="ml-5">
+      <strong>Start Here</strong>
+      <Link href="/docs" className="ml-5">
+        Getting Started
+      </Link>
+      <Link href="/docs/component-status" className="ml-5">
         Component Status
       </Link>
       <strong className="text-primary-blue">Components</strong>
@@ -14,8 +18,8 @@ const Sidebar = () => {
         <React.Fragment key={idx}>
           <strong>{item.category}</strong>
           {item.components.map((comp, idx) => (
-            <Link key={idx} className="ml-5" href="">
-              {comp.name}
+            <Link key={idx} className="ml-5" href={`${comp.name}`}>
+              {formatComponentName(comp.name)}
             </Link>
           ))}
         </React.Fragment>

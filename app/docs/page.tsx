@@ -3,7 +3,7 @@ import Link from "next/link";
 const DocsPage = () => {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-span-12 md:col-span-8 md:col-start-1">
+      <div className="col-span-12 md:col-span-8 md:col-start-3 col-start-1">
         <h1 className="font-bold text-3xl mb-3">
           <small className="text-sm text-primary-blue">How to use</small> <br />
           Get started with MSC Design System

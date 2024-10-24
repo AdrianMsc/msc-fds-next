@@ -692,20 +692,170 @@ h6 {
   }
 }
 
+.msc-pager-container {
+  position: relative;
+  display: flex;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media not all and (min-width: 1024px) {
+  .msc-pager-container {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .msc-pager-container {
+    justify-content: center;
+  }
+}
+
+.msc-pager-container-after::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 95%;
+  width: 2.25rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #f2f2f2 var(--tw-gradient-to-position);
+  content: var(--tw-content);
+  opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  .msc-pager-container-after::after {
+    content: var(--tw-content);
+    height: 83%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .msc-pager-container-after::after {
+    --tw-content: none;
+    content: var(--tw-content);
+  }
+}
+
+.msc-pager-container-before::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 95%;
+  width: 2.25rem;
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #f2f2f2 var(--tw-gradient-to-position);
+  content: var(--tw-content);
+  opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  .msc-pager-container-before::before {
+    content: var(--tw-content);
+    height: 83%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .msc-pager-container-before::before {
+    --tw-content: none;
+    content: var(--tw-content);
+  }
+}
+
+.msc-pager-list {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 400;
+}
+
+.msc-pager-item {
+  border-right-width: 1px;
+  padding: 1rem;
+}
+
+.msc-pager-item:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 1024px) {
+  .msc-pager-item {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.msc-pager-item:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.msc-pager-item:focus-visible {
+  outline-style: dashed;
+  outline-width: 1px;
+  outline-offset: 4px;
+  outline-color: #424242;
+}
+
+.msc-pager-last-item {
+  white-space: nowrap;
+  border-style: none;
+  padding: 1rem;
+}
+
+.msc-pager-last-item:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 1024px) {
+  .msc-pager-last-item {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.msc-pager-last-item:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .fixed {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
 .col-span-12 {
   grid-column: span 12 / span 12;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-2 {
@@ -752,6 +902,14 @@ h6 {
   margin-top: 1.25rem;
 }
 
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -796,6 +954,10 @@ h6 {
 .rotate-45 {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
 }
 
 .list-disc {
@@ -861,10 +1023,6 @@ h6 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -898,16 +1056,24 @@ h6 {
   padding-left: 2.5rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pt-\[44px\] {
-  padding-top: 44px;
+.pr-10 {
+  padding-right: 2.5rem;
 }
 
 .pt-\[64px\] {
   padding-top: 64px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -1020,8 +1186,8 @@ body {
     grid-column: span 8 / span 8;
   }
 
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  .md\:col-start-3 {
+    grid-column-start: 3;
   }
 }
 
