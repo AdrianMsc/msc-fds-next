@@ -47,9 +47,6 @@ const ComponentStatusPage = () => {
                     Figma
                   </th>
                   <th scope="col" className="px-6 py-3 w-[15%]">
-                    Docs
-                  </th>
-                  <th scope="col" className="px-6 py-3 w-[15%]">
                     Storybook
                   </th>
                   <th scope="col" className="px-6 py-3 w-[15%]">

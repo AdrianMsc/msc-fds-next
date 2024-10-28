@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import React from "react";
 import formatComponentName from "../../../utils/formatComponentName";
 
 export async function generateStaticParams() {

@@ -10,7 +10,7 @@ const Sidebar = () => {
       <Link href="/docs" className="ml-5">
         Getting Started
       </Link>
-      <Link href="/docs/component-status" className="ml-5">
+      <Link href="/docs/ComponentStatus" className="ml-5">
         Component Status
       </Link>
       <strong className="text-primary-blue">Components</strong>
@@ -18,7 +18,7 @@ const Sidebar = () => {
         <React.Fragment key={idx}>
           <strong>{item.category}</strong>
           {item.components.map((comp, idx) => (
-            <Link key={idx} className="ml-5" href={`${comp.name}`}>
+            <Link key={idx} className="ml-5" href={`docs/${comp.name}`}>
               {formatComponentName(comp.name)}
             </Link>
           ))}
