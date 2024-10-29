@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Lottie from "react-lottie";
-import animation from "../assets/animation.json";
+import animation from "../src/assets/animation.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,

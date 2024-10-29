@@ -1,5 +1,5 @@
-import AlphabeticalPager from "@/ds-components/AlphabeticPager";
-import Codeblock from "@/components/Codeblock";
+import AlphabeticalPager from "@/components/AlphabeticPager";
+import Codeblock from "@/layout/Codeblock";
 
 const AlphabeticPagerPage = () => {
   return (

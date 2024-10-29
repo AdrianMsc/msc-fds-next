@@ -1,5 +1,5 @@
-import Codeblock from "@/components/Codeblock";
-import Breadcrumb from "@/ds-components/Breadcrumb";
+import Codeblock from "@/layout/Codeblock";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const BreadcrumbPage = () => {
   return (

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +19,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@data": ["constants"],
+      "@layout": ["layout"],
+      "@components": ["components"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "ds-components/AlphabeticPager.jsx", "app/mdx-test/page.mdx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/AlphabeticPager.jsx",
+    "app/mdx-test/page.mdx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,5 +1,5 @@
-import Codeblock from "@/components/Codeblock";
-import MscAlert from "@/ds-components/MscAlert";
+import Codeblock from "@/layout/Codeblock";
+import MscAlert from "@/components/MscAlert";
 
 const MscAlertPage = () => {
   return (

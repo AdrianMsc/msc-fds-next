@@ -1,5 +1,5 @@
 import React from "react";
-import componentStatusData from "../../../data/components";
+import componentStatusData from "../../../src/constants/components";
 
 const ComponentStatusPage = () => {
   return (

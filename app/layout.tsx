@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MscLogo from "@/assets/MscLogo";
+import MscLogo from "assets/MscLogo";
 import Link from "next/link";
 export const metadata: Metadata = {
   title: "Fuel Design System",

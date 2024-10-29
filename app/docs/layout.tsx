@@ -1,4 +1,4 @@
-import Sidebar from "../../components/Sidebar";
+import Sidebar from "@/layout/Sidebar";
 
 export default function DocsLayout({
   children,

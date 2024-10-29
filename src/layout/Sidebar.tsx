@@ -1,4 +1,4 @@
-import componentStatusData from "@/data/components";
+import componentStatusData from "@/constants/components";
 import Link from "next/link";
 import React from "react";
 import formatComponentName from "../utils/formatComponentName";

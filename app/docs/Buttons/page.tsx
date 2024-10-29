@@ -4,8 +4,8 @@ import {
   faPrint,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-import Codeblock from "@/components/Codeblock";
-import MscButton from "@/ds-components/MscButton";
+import Codeblock from "@/layout/Codeblock";
+import MscButton from "@/components/MscButton";
 
 const ButtonPage = () => {
   return (
