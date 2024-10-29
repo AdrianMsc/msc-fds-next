@@ -15,6 +15,9 @@ module.exports = function ({ addComponents, theme }) {
     ".msc-grid-layout": {
       "@apply p-4 sm:ml-64 grid grid-cols-12": {},
     },
+    ".category-tag": {
+      "@apply mt-5 text-blue-600 font-bold text-sm": {},
+    },
   };
   addComponents(index);
 };
