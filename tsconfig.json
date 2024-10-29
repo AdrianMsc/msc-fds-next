@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "ds-components/AlphabeticPager.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "ds-components/AlphabeticPager.jsx", "app/mdx-test/page.mdx"],
   "exclude": ["node_modules"]
 }

@@ -1,11 +1,15 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const Codeblock = ({ children }: any) => {
+interface Props {
+  children: String;
+}
+
+const Codeblock = ({ children }: Props) => {
   return (
     <SyntaxHighlighter
-      language="htmlbars"
-      style={atomOneDark}
+      language="cshtml"
+      style={atomDark}
       className="max-[1500px] mt-2 rounded mb-10"
     >
       {children}
