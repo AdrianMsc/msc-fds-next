@@ -1,5 +1,5 @@
 import Codeblock from "@/layout/Codeblock";
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/MscBreadcrumb";
 
 const BreadcrumbPage = () => {
   return (

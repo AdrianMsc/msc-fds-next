@@ -1,4 +1,4 @@
-import AlphabeticalPager from "@/components/AlphabeticPager";
+import AlphabeticalPager from "@/components/MscAlphabeticPager";
 import Codeblock from "@/layout/Codeblock";
 
 const AlphabeticPagerPage = () => {

@@ -1,4 +1,4 @@
-const Breadcrumb = () => {
+const MscBreadcrumb = () => {
   return (
     <div className="msc-component-container-col my-5">
       <ol className="msc-breadcrumb-container">
@@ -39,4 +39,4 @@ const Breadcrumb = () => {
   );
 };
 
-export default Breadcrumb;
+export default MscBreadcrumb;
