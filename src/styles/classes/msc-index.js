@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const index = {
     ".msc-layout-container": {
       "@apply col-span-12 md:col-span-12 2xl:col-span-12 2xl:col-start-1 pt-10 px-6":

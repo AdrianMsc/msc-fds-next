@@ -1,5 +1,3 @@
-import Codeblock from "@/layout/Codeblock";
-
 const Breadcrumb = () => {
   return (
     <div className="msc-component-container-col my-5">

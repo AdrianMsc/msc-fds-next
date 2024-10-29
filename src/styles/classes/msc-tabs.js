@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const tabs = {
     ".msc-tabs": {
       "@apply grid auto-cols-min w-full overflow-x-auto md:overflow-x-hidden":

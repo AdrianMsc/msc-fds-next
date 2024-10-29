@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const icons = {
     ".icon-btn": {
       "@apply w-4 mr-2": {},

@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const link = {
     ".msc-link": {
       "@apply text-base text-primary-blue_dark font-bold hover:underline": {},

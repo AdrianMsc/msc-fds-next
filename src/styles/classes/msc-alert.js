@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const alert = {
     ".msc-alert": {
       "@apply border rounded-md p-3": {},

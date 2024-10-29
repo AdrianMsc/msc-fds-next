@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const cartActionBar = {
     ".msc-cart-action-bar": {
       "@apply bg-white rounded w-fit": {},

@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const typography = {
     h1: {
       "@apply font-bold text-[28px] lg:text-[32px] lg:leading-10": {},

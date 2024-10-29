@@ -1,4 +1,4 @@
-module.exports = function ({ addComponents, theme }) {
+module.exports = function ({ addComponents }) {
   const dialog = {
     ".msc-dialog-overlay": {
       "@apply fixed top-0 left-0 w-full h-screen bg-[#21212166] z-50 flex flex-col items-center justify-center":
