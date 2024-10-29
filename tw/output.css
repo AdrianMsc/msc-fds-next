@@ -1209,6 +1209,107 @@ h6 {
   text-decoration-line: underline;
 }
 
+.msc-alert {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  padding: 0.75rem;
+}
+
+.msc-alert-info {
+  --tw-border-opacity: 1;
+  border-color: rgb(28 88 238 / var(--tw-border-opacity));
+}
+
+.msc-alert-success {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 117 74 / var(--tw-border-opacity));
+}
+
+.msc-alert-warning {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 152 10 / var(--tw-border-opacity));
+}
+
+.msc-alert-error {
+  --tw-border-opacity: 1;
+  border-color: rgb(204 37 0 / var(--tw-border-opacity));
+}
+
+.msc-alert-error .msc-alert-title {
+  --tw-text-opacity: 1;
+  color: rgb(204 37 0 / var(--tw-text-opacity));
+}
+
+.msc-alert-icon {
+  position: relative;
+  top: 0.25rem;
+  display: block;
+}
+
+.msc-alert-info-icon {
+  --tw-text-opacity: 1;
+  color: rgb(28 88 238 / var(--tw-text-opacity));
+}
+
+.msc-alert-success-icon {
+  --tw-text-opacity: 1;
+  color: rgb(14 117 74 / var(--tw-text-opacity));
+}
+
+.msc-alert-warning-icon {
+  --tw-text-opacity: 1;
+  color: rgb(255 152 10 / var(--tw-text-opacity));
+}
+
+.msc-alert-error-icon {
+  --tw-text-opacity: 1;
+  color: rgb(204 37 0 / var(--tw-text-opacity));
+}
+
+.msc-alert-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.msc-alert-content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .msc-alert-content {
+    min-width: 300px;
+    max-width: 50%;
+  }
+}
+
+.msc-alert-content a {
+  --tw-text-opacity: 1;
+  color: rgb(13 58 169 / var(--tw-text-opacity));
+}
+
+.msc-alert-cta-container {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .msc-alert-cta-container {
+    margin-top: 0px;
+    justify-content: flex-end;
+  }
+}
+
+.msc-alert-cta-container button {
+  white-space: nowrap;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1479,6 +1580,10 @@ h6 {
 
 .pt-\[64px\] {
   padding-top: 64px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-left {
