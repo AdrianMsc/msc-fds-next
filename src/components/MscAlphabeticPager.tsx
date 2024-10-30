@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-const AlphabeticalPager = () => {
+const MscAlphabeticPager = () => {
   const alphabet = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ", "0-9"];
   const pagerContainerRef = useRef(null);
   const pagerListRef = useRef(null);
@@ -73,4 +73,4 @@ const AlphabeticalPager = () => {
   );
 };
 
-export default AlphabeticalPager;
+export default MscAlphabeticPager;

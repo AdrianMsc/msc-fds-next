@@ -30,8 +30,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/AlphabeticPager.jsx",
-    "app/mdx-test/page.mdx"
   ],
   "exclude": ["node_modules"]
 }

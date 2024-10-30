@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 
 export const MscTabs = ({ labels = ["Tab 1", "Tab 2", "Tab 3"] }) => {
